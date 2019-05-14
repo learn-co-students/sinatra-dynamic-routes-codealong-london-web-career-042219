@@ -27,7 +27,7 @@ class App < Sinatra::Base
     num2 = params[:num2].to_i
     @operation = params[:operation]
     case @operation
-      when '*'
+      when 'multiply'
       "#{num1*num2}"
       when '+'
         "#{num1+num2}"
